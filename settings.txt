@@ -1,0 +1,10 @@
+# TabRounds [0]
+6
+# Searching [1]
+25
+# TaskKill - Don't Touch [2]
+msedge
+# Time till Kill [3]
+5
+# Settings Submenu - Don't Touch [4]
+defaultapps
