@@ -21,10 +21,12 @@ def ReadSettings():
         count += 1
 
     Settings = [1]*count
+    count = 0
     for line in Lines:
         if(line.startswith("#")): 
             continue
         Settings[count] = line.strip()
+        count += 1
     return Settings
 
 Settings = ReadSettings()

@@ -9,4 +9,4 @@ msedge
 # Settings Submenu - Don't Touch [4]
 defaultapps
 # Update Branch - main or dev [5]
-main
+dev
