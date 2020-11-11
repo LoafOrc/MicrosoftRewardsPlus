@@ -14,13 +14,17 @@ def ReadSettings():
     file1 = open('settings.txt', 'r')
     Lines = file1.readlines()
 
-    Settings = [1]*len(Lines)
     count = 0
+    for line in Lines:
+        if(line.startswith("#")):
+            continue
+        count += 1
+
+    Settings = [1]*count
     for line in Lines:
         if(line.startswith("#")): 
             continue
         Settings[count] = line.strip()
-        count += 1
     return Settings
 
 Settings = ReadSettings()

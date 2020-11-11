@@ -10,7 +10,7 @@ from update_check import checkForUpdates
 checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/" + Main.Settings[5] + "/Search.py")
 
 Main.OpenSettings(Main.Settings[4])
-input("User: Please change your deafault browser to Microsoft Edge")
+input("User: Please change your default browser to Microsoft Edge")
 
 
 #Main Loop
