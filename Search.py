@@ -1,7 +1,4 @@
 #Check Updates
-import sys, os
-if 'update_check' in sys.modules == False:
-    os.system("pip install update_check")
 
 from update_check import checkForUpdates
 
