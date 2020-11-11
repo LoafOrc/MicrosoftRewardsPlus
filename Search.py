@@ -1,5 +1,6 @@
-#Check Updates p
+#Check Updates
 import Update
+Update.CheckForUpdates()
 print("Libraries: Importing")
 
 import webbrowser as edge
