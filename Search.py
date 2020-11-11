@@ -5,8 +5,8 @@ import subprocess, sys, os
 reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
 installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
 
-if ('update_checker' in installed_packages) == False:
-    os.system("pip install update_checker")
+if ('update_check' in installed_packages) == False:
+    os.system("pip install update_check")
 
 from update_check import checkForUpdates
 
