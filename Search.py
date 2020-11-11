@@ -10,10 +10,11 @@ if ('update_check' in installed_packages) == False:
 
 from update_check import checkForUpdates
 
-checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Search.py")
 
 import webbrowser as edge
 import Main
+
+checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/" + Main.ReadSettings()[5] + "/Search.py")
 
 Main.OpenSettings(Main.ReadSettings()[4])
 input("User: Please change your deafault browser to Microsoft Edge")

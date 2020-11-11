@@ -3,7 +3,7 @@ import time,os
 #Check Updates
 from update_check import checkForUpdates
 
-checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Main.py")
+checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/" + ReadSettings()[5] + "/Main.py")
 
 
 def KillTask(task):
