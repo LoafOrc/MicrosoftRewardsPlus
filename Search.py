@@ -1,9 +1,12 @@
+#Check Updates
+import Update
 print("Libraries: Importing")
 
 import webbrowser as edge
 import Main
     
 print("Libraries: Successfully Imported")
+print("Checking For Updates")
 
 Main.OpenSettings(Main.ReadSettings()[4])
 input("User: Please change your deafault browser to Microsoft Edge")
