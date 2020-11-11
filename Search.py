@@ -3,13 +3,8 @@ from update_check import checkForUpdates
 
 checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Search.py")
 
-print("Libraries: Importing")
-
 import webbrowser as edge
 import Main
-    
-print("Libraries: Successfully Imported")
-print("Checking For Updates")
 
 Main.OpenSettings(Main.ReadSettings()[4])
 input("User: Please change your deafault browser to Microsoft Edge")
@@ -20,7 +15,6 @@ Main.KillTask(Main.ReadSettings()[2])
 for TabRound in range(0, int(Main.ReadSettings()[0]), 1):
     for searching in range(0,int(Main.ReadSettings()[1]),1):
         
-        print("Tab: Opening, " + str(searching * (TabRound + 1)))
         #Create a unique Search
         edge.open(Main.BingSearch((searching + 1) * (TabRound + 1)))
     Main.KillTask("msedge")
