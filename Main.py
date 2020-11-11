@@ -1,5 +1,11 @@
 import time,os
 
+#Check Updates
+from update_check import checkForUpdates
+
+checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Main.py")
+
+
 def KillTask(task):
     print("Subprocess: Killing " + task +".exe")
     time.sleep(int(ReadSettings()[3]))

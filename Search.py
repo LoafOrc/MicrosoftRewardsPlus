@@ -1,6 +1,8 @@
 #Check Updates
-import Update
-Update.CheckForUpdates()
+from update_check import checkForUpdates
+
+checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Search.py")
+
 print("Libraries: Importing")
 
 import webbrowser as edge
