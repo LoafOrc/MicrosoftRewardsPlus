@@ -1,5 +1,13 @@
 #Check Updates
 
+import subprocess, sys, os
+
+reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
+installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
+
+if ('update_checker' in installed_packages) == False:
+    os.system("pip install update_checker")
+
 from update_check import checkForUpdates
 
 checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Search.py")
