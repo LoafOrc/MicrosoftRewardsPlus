@@ -1,4 +1,8 @@
 #Check Updates
+import sys, os
+if 'update_check' in sys.modules == False:
+    os.system("pip install update_check")
+
 from update_check import checkForUpdates
 
 checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/main/Search.py")
