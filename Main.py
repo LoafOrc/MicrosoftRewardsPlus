@@ -20,7 +20,7 @@ def ReadSettings():
             continue
         count += 1
 
-    Settings = [1]*count
+    Settings = [1]*count+1
     count = 0
     for line in Lines:
         if(line.startswith("#")): 
