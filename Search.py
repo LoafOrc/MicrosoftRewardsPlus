@@ -19,7 +19,7 @@ for TabRound in range(0, int(Main.Settings[0]), 1):
     for searching in range(0,int(Main.Settings[1]),1):
         
         #Create a unique Search
-        edge.open(Main.BingSearch((searching + 1) * (TabRound + 1)))
+        edge.open(Main.BingSearch(searching + TabRound*Main.Settings[1]))
     Main.KillTask("msedge")
 edge.open('https://account.microsoft.com/rewards/')
 
