@@ -31,7 +31,8 @@ def ReadSettings():
 
 Settings = ReadSettings()
 
-checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/" + Settings[5] + "/Main.py")
+if(Settings[5] != "none"):
+    checkForUpdates(__file__, "https://raw.githubusercontent.com/LoafOrc/MicrosoftRewardsPlus/" + Settings[5] + "/Main.py")
 
 def KillTask(task):
     print("Subprocess: Killing " + task +".exe")
