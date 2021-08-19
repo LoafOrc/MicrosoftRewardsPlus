@@ -21,6 +21,3 @@ for TabRound in range(0, int(Main.Settings[0]), 1):
         os.system("start msedge " + query)
     Main.KillTask("msedge")
 os.system("start msedge https://account.microsoft.com/rewards/")
-
-
-input("User: You may now set your default browser back")
